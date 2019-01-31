@@ -7,9 +7,11 @@ import * as serviceWorker from './serviceWorker'
 import { createStore, applyMiddleware, combineReducers } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import listReducer from './store/reducers/list'
+import { reducer } from 'redux-search'
 
 const rootReducer = combineReducers({
 	list: listReducer,
+	search: reducer,
 })
 
 const logger = store => {
@@ -24,7 +26,6 @@ const logger = store => {
 }
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(logger)))
-//const store = createStore(rootReducer)
 
 const app = (
 	<Provider store={store}>

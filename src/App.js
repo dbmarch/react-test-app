@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
+
 import './App.css'
+import FilteredListBox from './containers/filtered-listbox'
 
 class App extends Component {
 	render() {
@@ -9,7 +10,9 @@ class App extends Component {
 				<header className="App-header">
 					<h2> Redux Search Demo</h2>
 				</header>
-				<main />
+				<main>
+					<FilteredListBox />
+				</main>
 			</div>
 		)
 	}
