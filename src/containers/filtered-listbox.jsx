@@ -1,17 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { resetList } from '../store/actions/actions'
+import { resetList, searchList } from '../actions/actions'
+import Listbox from '../components/listbox'
+import { getFilteredNamesSelector, getNamesSelector } from '../selectors/getFilteredNames'
 
-const FilteredListbox = ({ list, onResetList }) => {
-	// console.log(`list: ${JSON.stringify(list, null, 2)}`)
-
-	const listItem = list.map(item => <li key={item}>{item}</li>)
-
+const FilteredListbox = ({ names, filteredNames, onResetList, onSearchNames }) => {
+	// console.log('filteredNames: ', filteredNames)
 	return (
 		<div className="page">
-			<div className="list-panel">
-				<ul>{listItem}</ul>
-			</div>
+			<Listbox names={names}> </Listbox>
+			<Listbox names={filteredNames} />
 			<div className="right-panel">
 				<input
 					type="text"
@@ -19,6 +17,7 @@ const FilteredListbox = ({ list, onResetList }) => {
 					placeholder="Search..."
 					onChange={evt => {
 						console.log(`${evt.target.value}`)
+						onSearchNames(evt.target.value)
 					}}
 				/>
 				<button type="button" className="reset-button" onClick={onResetList}>
@@ -31,13 +30,15 @@ const FilteredListbox = ({ list, onResetList }) => {
 
 const mapStateToProps = state => {
 	return {
-		list: state.list.items,
+		names: getNamesSelector(state),
+		filteredNames: getFilteredNamesSelector(state),
 	}
 }
 
 const mapDispatchToProps = dispatch => {
 	return {
 		onResetList: () => dispatch(resetList()),
+		onSearchNames: value => dispatch(searchList(value)),
 	}
 }
 

@@ -20,7 +20,7 @@
 .page {
   margin: 2rem;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 25% 25% 50%;
 }
 
 .list-panel {

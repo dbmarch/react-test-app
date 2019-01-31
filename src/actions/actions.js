@@ -5,3 +5,10 @@ export const resetList = () => {
 		type: actionTypes.RESET_LIST,
 	}
 }
+
+export const searchList = key => {
+	return {
+		type: actionTypes.SEARCH_LIST,
+		payload: key,
+	}
+}
