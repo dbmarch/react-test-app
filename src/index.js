@@ -6,13 +6,9 @@ import { Provider } from 'react-redux'
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
-import { createStore, applyMiddleware, combineReducers } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import listReducer from './reducers/nameList'
-
-const rootReducer = combineReducers({
-  nameList: listReducer
-})
+import rootReducer from './reducers/'
 
 const logger = (store) => {
   return (next) => {
