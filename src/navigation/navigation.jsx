@@ -14,14 +14,14 @@ const styles = (theme) => ({
     flexGrow: 1
   },
   menuItem: {
-    paddingRight: theme.spacing.unit * 10,
+    paddingRight: theme.spacing.unit * 8,
     textDecoration: 'none'
   }
 })
 
 const Navigation = ({ classes }) => {
   return (
-    <AppBar position="static" color="default" className={classes.navBar}>
+    <AppBar position="static" color="inherit" className={classes.navBar}>
       <Toolbar>
         <Typography className={classes.menuItem} variant="h6" color="inherit" noWrap>
           <Link className="nav-item-link" to="/">
@@ -41,6 +41,16 @@ const Navigation = ({ classes }) => {
         <Typography className={classes.menuItem} variant="h6" noWrap>
           <Link className="nav-item-link" to="/text">
             Text
+          </Link>
+        </Typography>
+        <Typography className={classes.menuItem} variant="h6" noWrap>
+          <Link className="nav-item-link" to="/tab">
+            Tabs
+          </Link>
+        </Typography>
+        <Typography className={classes.menuItem} variant="h6" noWrap>
+          <Link className="nav-item-link" to="/snack-bar">
+            SnackBar
           </Link>
         </Typography>
       </Toolbar>

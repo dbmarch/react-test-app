@@ -6,6 +6,8 @@ import Home from './containers/home-page'
 import SearchView from './containers/filtered-listbox'
 import ButtonView from './containers/button-view'
 import TextView from './containers/text-view'
+import TabView from './containers/tab-view'
+import SnackBarView from './containers/snack-bar-view'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import red from '@material-ui/core/colors/red'
 import purple from '@material-ui/core/colors/purple'
@@ -41,6 +43,8 @@ class App extends Component {
             <Route path="/search" component={SearchView} />
             <Route path="/buttons" component={ButtonView} />
             <Route path="/text" component={TextView} />
+            <Route path="/tab" component={TabView} />
+            <Route path="/snack-bar" component={SnackBarView} />
           </Switch>
         </div>
       </MuiThemeProvider>
