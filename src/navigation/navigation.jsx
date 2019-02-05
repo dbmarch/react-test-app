@@ -25,7 +25,7 @@ const TextLink = (props) => <RouterLink to="/text" {...props} />
 const ButtonsLink = (props) => <RouterLink to="/buttons" {...props} />
 const TabLink = (props) => <RouterLink to="/tab" {...props} />
 const SnackbarLink = (props) => <RouterLink to="/snack-bar" {...props} />
-
+const TooltipLink = (props) => <RouterLink to="/tool-tip" {...props} />
 const Navigation = ({ classes }) => {
   return (
     <AppBar position="static" color="inherit" className={classes.navBar}>
@@ -66,6 +66,17 @@ const Navigation = ({ classes }) => {
           underline="hover"
         >
           SnackBar
+        </Link>
+
+        <Link
+          className={classes.menuItem}
+          component={TooltipLink}
+          variant="h6"
+          color="inherit"
+          noWrap
+          underline="hover"
+        >
+          Tooltip
         </Link>
       </Toolbar>
     </AppBar>

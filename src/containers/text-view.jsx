@@ -1,11 +1,10 @@
 import React from 'react'
-import OutlinedTextField from '../components/outlined-text-field'
-
-const TextView = (props) => (
+import CustomToolTip from '../components/tool-tip-custom'
+const ToolTipView = (props) => (
   <div>
-    <h2>Text Demo</h2>
-    <OutlinedTextField />
+    <h2>Tool Tip Demo</h2>
+    <CustomToolTip />
   </div>
 )
 
-export default TextView
+export default ToolTipView

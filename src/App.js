@@ -8,6 +8,7 @@ import ButtonView from './containers/button-view'
 import TextView from './containers/text-view'
 import TabView from './containers/tab-view'
 import SnackBarView from './containers/snack-bar-view'
+import ToolTipView from './containers/tool-tip-view.jsx'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import red from '@material-ui/core/colors/red'
 import purple from '@material-ui/core/colors/purple'
@@ -45,6 +46,7 @@ class App extends Component {
             <Route path="/text" component={TextView} />
             <Route path="/tab" component={TabView} />
             <Route path="/snack-bar" component={SnackBarView} />
+            <Route path="/tool-tip" component={ToolTipView} />
           </Switch>
         </div>
       </MuiThemeProvider>
