@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom'
+import Link from '@material-ui/core/Link'
 import { withStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -23,36 +24,36 @@ const Navigation = ({ classes }) => {
   return (
     <AppBar position="static" color="inherit" className={classes.navBar}>
       <Toolbar>
-        <Typography className={classes.menuItem} variant="h6" color="inherit" noWrap>
-          <Link className="nav-item-link" to="/">
+        <Link className={classes.menuItem} variant="h6" color="inherit" noWrap>
+          <RouterLink className="nav-item-link" to="/">
             Home
-          </Link>
-        </Typography>
-        <Typography className={classes.menuItem} variant="h6" color="inherit" noWrap>
-          <Link className="nav-item-link" to="/search">
+          </RouterLink>
+        </Link>
+        <Link className={classes.menuItem} variant="h6" color="inherit" noWrap>
+          <RouterLink className="nav-item-link" to="/search">
             search
-          </Link>
-        </Typography>
-        <Typography className={classes.menuItem} variant="h6" color="inherit" noWrap>
-          <Link className="nav-item-link" to="/buttons">
+          </RouterLink>
+        </Link>
+        <Link className={classes.menuItem} variant="h6" color="inherit" noWrap>
+          <RouterLink className="nav-item-link" to="/buttons">
             Buttons
-          </Link>
-        </Typography>
-        <Typography className={classes.menuItem} variant="h6" noWrap>
-          <Link className="nav-item-link" to="/text">
+          </RouterLink>
+        </Link>
+        <Link className={classes.menuItem} variant="h6" color="inherit" noWrap>
+          <RouterLink className="nav-item-link" to="/text">
             Text
-          </Link>
-        </Typography>
-        <Typography className={classes.menuItem} variant="h6" noWrap>
-          <Link className="nav-item-link" to="/tab">
+          </RouterLink>
+        </Link>
+        <Link className={classes.menuItem} variant="h6" color="inherit" noWrap>
+          <RouterLink className="nav-item-link" to="/tab">
             Tabs
-          </Link>
-        </Typography>
-        <Typography className={classes.menuItem} variant="h6" noWrap>
-          <Link className="nav-item-link" to="/snack-bar">
+          </RouterLink>
+        </Link>
+        <Link className={classes.menuItem} variant="h6" color="inherit" noWrap>
+          <RouterLink className="nav-item-link" to="/snack-bar">
             SnackBar
-          </Link>
-        </Typography>
+          </RouterLink>
+        </Link>
       </Toolbar>
     </AppBar>
   )
