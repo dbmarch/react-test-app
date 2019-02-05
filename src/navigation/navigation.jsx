@@ -30,11 +30,11 @@ const Navigation = ({ classes }) => {
   return (
     <AppBar position="static" color="inherit" className={classes.navBar}>
       <Toolbar>
-        <Link className={classes.menuItem} component={HomeLink} variant="h6" color="inherit" noWrap underline="hover">
+        <Link className={classes.menuItem} component={HomeLink} variant="h6" color="secondary" noWrap underline="hover">
           Home
         </Link>
 
-        <Link className={classes.menuItem} component={SearchLink} variant="h6" color="inherit" noWrap underline="hover">
+        <Link className={classes.menuItem} component={SearchLink} variant="h6" color="primary" noWrap underline="hover">
           Search
         </Link>
 
