@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 import listReducer from './nameList'
-import colorReducer from './colorReducer'
+import themeReducer from './theme'
 
 const reducer = combineReducers({
   nameList: listReducer,
-  color: colorReducer
+  themes: themeReducer
 })
 
 export default reducer

@@ -1,3 +1,4 @@
 export const RESET_LIST = 'RESET_LIST'
 export const SEARCH_LIST = 'SEARCH_LIST'
-export const SET_COLOR = 'SET_COLOR'
+export const SET_PRIMARY_COLOR = 'SET_PRIMARY_COLOR'
+export const SET_SECONDARY_COLOR = 'SET_SECONDARY_COLOR'

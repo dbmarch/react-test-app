@@ -12,3 +12,17 @@ export const searchList = (key) => {
     payload: key
   }
 }
+
+export const setPrimaryColor = (color) => {
+  return {
+    type: actionTypes.SET_PRIMARY_COLOR,
+    payload: color
+  }
+}
+
+export const setSecondaryColor = (color) => {
+  return {
+    type: actionTypes.SET_SECONDARY_COLOR,
+    payload: color
+  }
+}
