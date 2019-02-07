@@ -36,6 +36,20 @@ const colorSelect = ({ label, id, color, onColorChange, classes }) => {
         <option value="orange">Orange </option>
         <option value="purple">Purple </option>
         <option value="indigo">Indigo </option>
+        <option value="amber">Amber</option>
+        <option value="blueGrey">Blue-Gray</option>
+        <option value="brown">Brown</option>
+        <option value="cyan">Cyan</option>
+        <option value="deepOrange">Deep-Orange</option>
+        <option value="deepPurple">Deep-Purple</option>
+        <option value="green">Green</option>
+        <option value="grey">Grey</option>
+        <option value="lightBlue">Light Blue</option>
+        <option value="lightGreen">Light Green</option>
+        <option value="lime">Lime</option>
+        <option value="pink">Pink</option>
+        <option value="teal">Teal</option>
+        <option value="yellow">Yellow</option>
       </Select>
     </FormControl>
   )
