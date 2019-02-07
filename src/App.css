@@ -42,3 +42,9 @@ a.nav-item-link:hover {
 
 } */
 
+.side-side {
+  margin: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
