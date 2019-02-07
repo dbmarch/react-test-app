@@ -11,6 +11,7 @@ import TabView from './containers/tab-view'
 import SnackBarView from './containers/snack-bar-view'
 import ToolTipView from './containers/tool-tip-view'
 import DialogView from './containers/dialog-view'
+import BadgeView from './containers/badge-view'
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { getThemeSelector } from './selectors/getTheme'
@@ -30,6 +31,7 @@ class App extends Component {
             <Route path="/snack-bar" component={SnackBarView} />
             <Route path="/tool-tip" component={ToolTipView} />
             <Route path="/dialog" component={DialogView} />
+            <Route path="/badge" component={BadgeView} />
           </Switch>
         </div>
       </MuiThemeProvider>

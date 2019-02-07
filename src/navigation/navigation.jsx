@@ -27,6 +27,7 @@ const TabLink = (props) => <RouterLink to="/tab" {...props} />
 const SnackbarLink = (props) => <RouterLink to="/snack-bar" {...props} />
 const TooltipLink = (props) => <RouterLink to="/tool-tip" {...props} />
 const DialogLink = (props) => <RouterLink to="/dialog" {...props} />
+const BadgeLink = (props) => <RouterLink to="/badge" {...props} />
 const Navigation = ({ classes }) => {
   return (
     <AppBar position="static" color="inherit" className={classes.navBar}>
@@ -56,6 +57,10 @@ const Navigation = ({ classes }) => {
 
         <Link className={classes.menuItem} component={DialogLink} variant="h6" color="inherit" noWrap underline="hover">
           Dialog
+        </Link>
+
+        <Link className={classes.menuItem} component={BadgeLink} variant="h6" color="inherit" noWrap underline="hover">
+          Badge
         </Link>
 
         <Link className={classes.menuItem} component={TabLink} variant="h6" color="inherit" noWrap underline="hover">
